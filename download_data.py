@@ -15,8 +15,8 @@ missing_3dod_assets_video_ids = ['47334522','47334523','42897421','45261582','47
 def raw_files(video_id, assets):
     file_names = []
     for asset in assets:
-        if asset in ['confidence','lowres_depth', 'lowres_wide', 'lowres_wide_intrinsics',
-                      'ultrawide', 'ultrawide_intrinsics', 'vga_wide', 'vga_wide_intrinsics']:
+        if asset in ['confidence','lowres_depth', 'lowres_wide', 'lowres_wide_intrinsics', 'wide', 'wide_intrinsics',
+                      'highres_depth', 'ultrawide', 'ultrawide_intrinsics', 'vga_wide', 'vga_wide_intrinsics']:
             file_names.append(asset + '.zip')
         elif asset == 'mov':
             file_names.append(f'{video_id}.mov')
